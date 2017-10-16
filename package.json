@@ -1,0 +1,27 @@
+{
+  "name": "test_bot",
+  "version": "1.0.0",
+  "description": "A test bot that responds too user input",
+  "main": "index.js",
+  "scripts": {
+    "test": "Hello World"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mc1134/MessengerBot.git"
+  },
+  "keywords": [
+    "none"
+  ],
+  "author": "MC",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/mc1134/MessengerBot/issues"
+  },
+  "homepage": "https://github.com/mc1134/MessengerBot#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "request": "^2.83.0"
+  }
+}
