@@ -1,6 +1,18 @@
+/**
+ * SHORT README FOR THIS FILE:
+ * This file handles the bot's responses to user input.
+ * The first function (commented out) is the sample code for hearing
+ * 'color'. It has been slightly modified in the name of javascript
+ * experimentation.
+ * Key words that this document currently supports:
+ * 'meetup'
+ * 'jacob'
+ */
+
     // NOTE: THIS BLOCK OF CODE HAS BEEN MODIFIED AND SERVES AS A TEMPLATE FOR ALL
     // BOT RESPONSES TO USER INPUT
     // This block listens for the string "color"
+    /*
     controller.hears(['color'], 'message_received', function(bot, message) {
         bot.startConversation(message, function(err, convo) {
           // This line was part of the starter code.
@@ -33,6 +45,7 @@
             });
         });
     });
+    */
 
     // This block listens for the string "meetup"
     controller.hears(['meetup'], 'message_received', function(bot, message) {
