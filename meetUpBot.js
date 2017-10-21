@@ -22,16 +22,14 @@
             //console.log('red' == 'red');
             //console.log('red' == 'blue');
 
-            if(testEquals(responseColor, badColor)){
+            if(testEquals(responseColor, badColor))
               convo.say('Personally I think ' + badColor + ' is not the best color.');
-            } else 
+            else 
               convo.say('Cool, I like ' + responseColor + ' too!');
-
 
             //console.log('Reached this point');
 
             convo.next();
-
             });
         });
     });
@@ -62,8 +60,30 @@
               // For now it will print stuff in the console
               console.log('Successfully selected setting.');
             }
-            convo.next();
 
+            convo.next();
+            });
+        });
+    });
+
+    // This block listens for the string "jacob"
+    controller.hears(['jacob'], 'message_received', function(bot, message) {
+        bot.startConversation(message, function(err, convo) {
+          // Asks the user what setting
+          convo.ask('Sorry, did you mean: \"jekub\"?', function(response, convo) {
+            // A function that tests if two strings are equal
+            function testEquals(str1, str2){
+              return str1 == str2;
+            }
+
+            var jacob = response.text;
+
+            if(testEquals(jacob, 'yes'))
+              convo.say('You are correct.');
+            else
+              convo.say('Whatever you say, jekub.');
+
+            convo.next();
             });
         });
     });
