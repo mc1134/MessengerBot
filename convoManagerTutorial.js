@@ -83,7 +83,7 @@ module.exports = function(controller) {
       });
     });
 
-    // This block listens for the master strings "meet" and "meeting" and listens for a time "##:##"/"#:##"/"#"
+    // This block listens for the master string "meeting" and listens for a time "##:##"/"#:##"/"#"
     controller.hears(['meeting', 'meet'], 'message_received', function(bot, message) {
       // strs stores all the queries in an array
       var strs = message.text.split(" ");
